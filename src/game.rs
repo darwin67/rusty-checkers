@@ -126,12 +126,12 @@ impl GameEngine {
     }
 
     fn valid_jump(&self, _piece: &GamePiece, _from: &Coordinate, _to: &Coordinate) -> bool {
-        // hard code for now
+        // TODO: implement this
         true
     }
 
     fn valid_move(&self, _piece: &GamePiece, _from: &Coordinate, _to: &Coordinate) -> bool {
-        // hard code for now
+        // TODO: implement this
         true
     }
 
@@ -143,6 +143,16 @@ impl GameEngine {
         _ty: usize,
     ) -> Option<Coordinate> {
         None
+    }
+
+    pub fn get_piece(&self, _loc: Coordinate) -> Result<Option<GamePiece>, ()> {
+        // TODO: implement this
+        Ok(None)
+    }
+
+    pub fn current_turn(&self) -> PieceColor {
+        // TODO: implement this
+        PieceColor::Black
     }
 }
 
